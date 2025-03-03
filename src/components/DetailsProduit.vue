@@ -11,10 +11,10 @@ const emit = defineEmits(["fermer"]);
   <div class="overlay">
     <div class="popup">
       <h3>Détails du produit</h3>
-      <p><strong>Nom :</strong> {{ produit.nom }}</p>
-      <p><strong>Prix :</strong> {{ produit.prix }}</p>
-      <p><strong>Quantité :</strong> {{ produit.quantite }}</p>
-      <p><strong>Description :</strong> {{ produit.description }}</p>
+      <p><strong>Nom :</strong> {{ props.produit.nom }}</p>
+      <p><strong>Prix :</strong> {{ props.produit.prix }}</p>
+      <p><strong>Quantité :</strong> {{ props.produit.quantite }}</p>
+      <p><strong>Description :</strong> {{ props.produit.description }}</p>
       <button @click="emit('fermer')">Terminer</button>
     </div>
   </div>

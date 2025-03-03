@@ -9,7 +9,7 @@ const emit = defineEmits(["confirmer", "annuler"]);
   <!-- SOURCE/AIDE: ChatGPT -->
   <div class="overlay">
     <div class="popup">
-      <h3>Supprimer "{{ produitNom }}" ?</h3>
+      <h3>Supprimer "{{ props.produitNom }}" ?</h3>
       <p>Êtes-vous sûr de vouloir supprimer ce produit ?</p>
       <div class="actions">
         <button @click="emit('annuler')" class="annuler">Annuler</button>
